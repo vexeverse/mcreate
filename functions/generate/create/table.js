@@ -7,13 +7,13 @@ async function createTable(data) {
   return new Promise(async (resolve, reject) => {
     const filePath = path.join(
       appDirectory,
-      "components/private/Table",
+      "components/private/table",
       data.path,
       "index.tsx"
     );
     const filePathCol = path.join(
       appDirectory,
-      "components/private/Table",
+      "components/private/table",
       data.path,
       "columns.tsx"
     );

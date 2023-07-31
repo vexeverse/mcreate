@@ -9,7 +9,7 @@ async function createConfig(data) {
   return new Promise(async (resolve, reject) => {
     const filePath = path.join(
       appDirectory,
-      "components/private/Table",
+      "components/private/table",
       data.path,
       "index.tsx"
     );

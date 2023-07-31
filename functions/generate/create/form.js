@@ -7,7 +7,7 @@ async function createForm(data) {
   return new Promise(async (resolve, reject) => {
     const filePath = path.join(
       appDirectory,
-      "components/private/Form",
+      "components/private/form",
       data.path,
       "index.tsx"
     );

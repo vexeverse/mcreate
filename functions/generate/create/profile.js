@@ -7,7 +7,7 @@ async function createProfile(data) {
   return new Promise(async (resolve, reject) => {
     const filePath = path.join(
       appDirectory,
-      "components/private/Profile",
+      "components/private/profile",
       data.path,
       "index.tsx"
     );
