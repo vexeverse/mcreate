@@ -11,7 +11,7 @@ async function createApi(data) {
       fs.writeFileSync(
         filePath,
         `        
-        import { getApi, formApi, getApiSingle } from "@/services/axios";
+        import { getApi, formApi, getApiSingle } from "@api/axios";
         import apiLink from "@/json/api";
         import { dummyData } from "@/json/dummydata";
 
@@ -44,7 +44,7 @@ async function createApi(data) {
           });
         }
         
-        export { getData, createData, editData, getSingleData };        
+        export default { getData, createData, editData, getSingleData };        
         
     `
       );

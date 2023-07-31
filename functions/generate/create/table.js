@@ -28,15 +28,15 @@ async function createTable(data) {
         //voidui
         import Breadcrumbs from "@/components/shared/Navigation/Breadcrumb";
         //container
-        import TableContainer from "@/components/container/Table";
-        //react-query
+        import TableContainer from "@container/table";
+         //react-query
         import { useQuery, useQueryClient } from "@tanstack/react-query";
         //columns
         import { columns } from "./columns";
         //apicalls
-        import { getData } from "@/services${data.path}";
+        import api from "@/services/config/permission";
         //profile
-        import ProfileComponent from '@/components/private/Profile${data.path}'
+        import ProfileComponent from '@profile${data.path}'
 
         //STATIC
 
@@ -54,7 +54,7 @@ async function createTable(data) {
                 server={false}
                 //data
                 query={moduleInfo.query}
-                api={getData}
+                api={api.getData}
                 columns={columns}
                 //tabs
 
@@ -104,11 +104,6 @@ async function createTable(data) {
         import { ActionIcon, Badge, Button, Group, Menu, Text } from "@mantine/core";
     
         export const columns = [
-          {
-            accessor: "id",
-            title: "#",
-            render: (row: any, index: any) => <>{++index}</>,
-          },     
          
         ];
         

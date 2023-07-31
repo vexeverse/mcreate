@@ -17,7 +17,7 @@ async function createList(data) {
       fs.writeFileSync(
         filePath,
         `        
-        import TableComponent from "@/components/private/Table${data.path}";
+        import TableComponent from "@table${data.path}";
         import moduleInfo from "../module.info";
 
         export default function () {
@@ -52,17 +52,17 @@ async function createNew(data) {
         filePath,
         `        
         //mantine
-        import { Text } from "@mantine/core";
+        import { Text } from "@mantine/core"
         //zod
         import { z } from "zod";
         //components
-        import FormContainer from "@/components/container/Form/General";
+        import FormContainer from "@container/form/General";
         import Breadcrumbs from "@/components/shared/Navigation/Breadcrumb";
-        import FormComponent from "@/components/private/Form${data.path}";
+        import FormComponent from "@form${data.path}";
         //info
         import moduleInfo from "../module.info";
         //api
-        import api from "@/services${data.path}";
+        import api from "@api${data.path}";
         
         export default function () {
           const validate = [
@@ -128,9 +128,9 @@ async function createEdit(data) {
         //zod
         import { z } from "zod";
         //components
-        import FormContainer from "@/components/container/Form/General";
+        import FormContainer from "@container/form/General";
         import Breadcrumbs from "@/components/shared/Navigation/Breadcrumb";
-        import FormComponent from "@/components/private/Form${data.path}";
+        import FormComponent from "@form${data.path}";
         //info
         import moduleInfo from "../module.info";
         //api

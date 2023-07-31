@@ -14,7 +14,7 @@ async function createList(data, modulePath) {
         //Module
         import Module from "@/modules";
         //Container
-        import { LayoutAdmin } from "@/components/layouts";
+        import { LayoutAdmin } from "@layout";
         
         export default function Page() {
           return (
@@ -46,7 +46,7 @@ async function createNew(data, modulePath) {
         //Module
         import Module from "@/modules";
         //Container
-        import { LayoutAdmin } from "@/components/layouts";
+        import { LayoutAdmin } from "@layout";
         
         export default function Page() {
           return (
@@ -79,7 +79,7 @@ async function createEdit(data, modulePath) {
         //Module
         import Module from "@/modules";
         //Container
-        import { LayoutAdmin } from "@/components/layouts";
+        import { LayoutAdmin } from "@layout";
         
         export default function Page() {
           return (
@@ -116,7 +116,7 @@ async function createView(data, modulePath) {
         //Module
         import Module from "@/modules";
         //Container
-        import { LayoutAdmin } from "@/components/layouts";
+        import { LayoutAdmin } from "@layout";
         
         export default function Page() {
           return (

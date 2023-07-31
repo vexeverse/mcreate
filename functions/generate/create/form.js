@@ -17,6 +17,8 @@ async function createForm(data) {
         filePath,
         `        
         import React, { useState, useContext } from "react";
+        //nextjs
+        import { useRouter } from "next/router";
         //mantine
         import {
           Alert,
@@ -32,14 +34,13 @@ async function createForm(data) {
           Textarea,
           useMantineTheme,
         } from "@mantine/core";
-        //context
-        import { FormContext } from "@/components/container/Form/General";
-        import { useRouter } from "next/router";
-        import FormHeader from "@/components/shared/Form/FormHeader";
-        
-        import { useFormContext } from "@/contexts/components/FormWrapper";
-        
+        //icons
         import { Warning } from "phosphor-react";
+        //context
+        import { useFormContext } from "@context/components/FormWrapper";
+        import { FormContext } from "@container/form/General";        
+        //UI
+        import FormHeader from "@ui/Form/FormHeader";    
         
         export default function() {
           //definition
