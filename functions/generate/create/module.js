@@ -222,7 +222,7 @@ async function createConfig(data) {
         import { Text } from "@mantine/core";
   
         const info = {
-          name: "${data.name}",
+          name: "${data.config.name}",
           bread: ${data.config.bread},
           query: ${data.config.query},
           key: "${data.config.key}",
